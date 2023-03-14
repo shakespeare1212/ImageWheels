@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+  }
+
+  #wheel01
+  {
+     position: absolute;
+     left: 20px;
+     top: 30px;
+     animation: mySpinClock 20s linear;
+     animation-fill-mode: forwards;
+     animation-iteration-count: infinite;
+    
+  
+
+  }
+    
+
+#wheel02
+{
+   position: absolute;
+   left: 20px;
+   top: 170px;
+   animation: mySpinCounterClock 20s linear;
+   animation-fill-mode: forwards;
+   animation-iteration-count: infinite;
+  
+}
+
+#PiePieceMask
+{
+  position: absolute;
+  left: -10px;
+  top: 195px;
+  z-index: 2;
+}
+
+
+@keyframes mySpinClock {
+  from { rotate: 0deg;}
+  to { rotate: 359deg;}
+}
+
+@keyframes mySpinCounterClock {
+  from { rotate: 359deg;}
+  to { rotate: 0deg;}
+}
+
